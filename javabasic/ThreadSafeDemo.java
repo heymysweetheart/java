@@ -1,5 +1,7 @@
 /**
  * Created by yuliang on 15-5-23.
+ * 当操作两个list（一个是线程安全，另一个是非线程安全）的时候，非线程安全list的add（）方法就会存在问题，导致有时候add()操作会
+ * 失败，或者多个线程之间的add()操作并没有完全执行成功。
  */
 import java.util.ArrayList;
 import java.util.Collections;
